@@ -292,8 +292,20 @@ header.masthead h1 {
   }
 
 form {
-      width: 30%;
+      width: 100%;
   }
+
+@media (min-width: 992px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    form {
+        width: 36%;
+    }
+}
 
 
 /* Footer */
@@ -346,7 +358,6 @@ form {
 }
 
 
-
 #plans-img {
     width: 80%;
     background-size: cover;
@@ -360,4 +371,30 @@ form {
 #review-img {
     width: 70%;
     background-size: cover;
+}
+
+/* ASBESTOS MANAGEMENT PAGE */
+
+.btn-link {
+    width: 100%;
+    text-align: start;
+}
+
+#accordion {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    #accordion {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #accordion {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
