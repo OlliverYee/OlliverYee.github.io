@@ -12,7 +12,7 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     }
 });
 
-// Scroll transition animation set
+// Transition animate set
 $(document).ready(function () {
     new WOW().init();
 });
