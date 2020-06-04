@@ -145,6 +145,7 @@ header.masthead h1 {
     font-size: 1rem;
 }
 
+
 .masthead-btn:hover {
         color: #4E97D1;;
         background-color: #FFF;
@@ -188,8 +189,6 @@ header.masthead h1 {
         border: 0px solid #FFF;
         font-weight: 600;
     }
-    
-
 }
 
 @media (min-width: 1200px) {
@@ -201,6 +200,19 @@ header.masthead h1 {
     header.masthead h1 {
         font-size: 3.5rem;
         padding-bottom: 1rem;
+    }
+
+    .masthead-btn {
+        color: #FFF;
+        font-family: "Montserrat Medium", sans-serif;
+        border: 1px solid #FFF;
+        border-radius: 10rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
     }
 
     .container, .container-nav {
@@ -242,8 +254,20 @@ header.masthead h1 {
   }
 
 .lead {
-    padding: 0 20rem;
+    padding: 0 2rem;
 }
+
+@media (min-width: 1200px) {
+    .lead {
+        padding: 0 10rem;
+    }
+}
+
+.banner-head {
+     width: 100%;
+     font-size: 3rem;
+}
+
 
 /* Snapshot Section */
 
@@ -343,7 +367,7 @@ form {
 .jumbotron {
     background-color: #608FA5;
     color: #FFF;
-    padding: 10em 1em;
+    padding: 10em 0;
     text-align: center;
 }
 
@@ -365,22 +389,27 @@ form {
     }
 }
 
-
 #plans-img {
-    width: 80%;
+    width: 70%;
     background-size: cover;
+    margin-left: 12rem;
 }
 
 #solution-img {
-    width: 65%;
+    width: 50%;
     background-size: cover;
+    margin-left: 12rem;
 }
 
-#review-img {
+#safety-img {
     width: 70%;
     background-size: cover;
-}
+    margin-left: 12rem;
+} 
 
+#the-solution {
+    background-color: #F1F1F1;
+}
 /* ASBESTOS MANAGEMENT PAGE */
 
 .btn-link {
