@@ -252,9 +252,26 @@ header.masthead h1 {
   
 .section-para {
     color: #333;
-    font-size: 24px;
+    font-size: 18px;
     line-height: normal;
-  }
+}
+
+  @media (min-width: 992px) {
+    .section-para {
+        color: #333;
+        font-size: 20px;
+        line-height: normal;
+      }
+}
+
+@media (min-width: 1200px) {
+    .section-para {
+        color: #333;
+        font-size: 24px;
+        line-height: normal;
+      }
+}
+
 
 .page-section{
     width: 100%;
