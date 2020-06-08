@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>About BMIS — BMIS</title>
-    <link rel="icon" type="image/png" href="./assets/img/bmis_logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
@@ -15,65 +15,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap Styles -->
+    <!-- Bootstrap Stylesheet-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Override Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+
+<body id="page-top">
+
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" id="navigationBar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container container-nav">
             <a class="navbar-brand js-scroll-trigger" href="index.html">
-                <!-- href="#page-top" for scroll to top -->
                 <img class="bmis-logo" src="./assets/img/bmis_logo.png" alt="BMIS Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mobileMenu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item selected"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="asbestos-management.html">Asbestos
                             Management</a></li>
                 </ul>
-                <button class="btn-lg log-in-btn">Log In</button>
+                <button class="btn-lg log-in-btn">Go To App</button>
             </div>
         </div>
     </nav>
 
+
     <!-- Masthead -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="banner-head">The Complete Asbestos Management System</h1>
-            <p class="lead">This is a good place to include something that you want users to see at a glance when they
-                click on the About link. It should give a good overview of what BMIS is, maybe info on background,
-                development, evolution etc.</p>
+            <h1 class="banner-head text-center">About BMIS</h1>
+            <hr class="divider my-4" />
+            <p class="lead text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil molestiae
+                incidunt tempora numquam at alias ab praesentium ratione vel, eligendi ex itaque minus nisi voluptates.
+                Vero, saepe! Expedita culpa dolor ut vero tempore, magnam voluptatem impedit enim ex neque recusandae.
+            </p>
         </div>
     </div>
 
-    <!-- Health and Safety Section -->
-    <section class="page-section" id="health-safety">
-        <div class="container d-flex justify-content-end">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    <h1 class="section-heading">
-                        2016 Health and Safety at Work
-                    </h1>
-                    <p class="section-para">Asbestos regulations mean that workplaces must effectively manage the
-                        risk
-                        of asbestos. Buildings
 
-                        constructed prior to 2000 are likely to contain asbestos materials which must be managed in
-                        accordance with these regulations.
+    <!-- Health & Safety-->
+    <section class="page-section" id="snapshot">
+        <div class="container container-section">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="section-heading">2016 Health and Safety at Work</h1>
+                    <p class="section-para">Asbestos regulations mean that workplaces must effectively manage the risk
+                        of asbestos. Buildings constructed prior to 2000 are likely to contain asbestos materials which
+                        must be managed in accordance with these regulations.
                     </p>
                 </div>
-                <div class="col-lg-6 col-xs-12 wow fadeInRight">
+                <div class="col-lg-6 text-center">
                     <img src="./assets/img/safety.svg" id="safety-img" alt="">
                 </div>
             </div>
@@ -81,12 +80,11 @@
     </section>
 
 
-
     <!-- The Solution Section -->
     <section class="page-section" id="the-solution">
-        <div class="container">
+        <div class="container container-section">
             <div class="row">
-                <div class="col-lg-6 wow fadeInLeft">
+                <div class="col-lg-6">
                     <img src="./assets/img/solution.svg" id="solution-img" alt="">
                 </div>
                 <div class="col-lg-6">
@@ -127,9 +125,10 @@
         </div>
     </section>
 
+
     <!-- Management Plans Section -->
     <section class="page-section" id="management-plans">
-        <div class="container">
+        <div class="container container-section">
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="section-heading">
@@ -145,25 +144,6 @@
                         building. Air monitoring data, clearance certificates for removed asbestos, workers asbestos
                         certificates and task analysis are all managed in the system.
                     </p>
-                    <p class="section-para">The plan must include the following:
-                    </p>
-                    <ul>
-                        <li>The identification of asbestos and asbestos containing materials (ACM) (e.g. where any
-                            signs
-                            and labels are located). </li>
-                        <li>Decisions and reasons behind the decisions, about how the asbestos risks are managed
-                            (e.g.
-                            safe work procedures and control measures). </li>
-                        <li>Procedures for recording incidents or emergencies involving asbestos in the workplace.
-                        </li>
-                        <li>Information about the workers carrying out work involving asbestos. </li>
-                    </ul>
-                    <p class="section-para">It is important to note that an asbestos management plan is a live
-                        document.
-                        The management plan must readily reflect changes to the workplace whether its change of use
-                        or
-                        refurbishment and damage.
-                    </p>
                     <p class="section-para">As all plans have to be kept up to date, this may result in a constant
                         re-issue of management plans from a consultant.
                     </p>
@@ -174,60 +154,32 @@
                         plans
                         are accessible to all workers through asbestos identification stickers on building doors.</p>
                 </div>
-                <div class="col-lg-6 wow fadeInRight">
+                <div class="col-lg-6 text-center">
                     <img src="./assets/img/plans.svg" id="plans-img" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-lg-5">
-                    <h2 class="section-heading mt-0 text-white">Get in Touch</h2>
-                    <p class="section-para text-white mb-4">Want to know more? Call us or use the form below to get
-                        started.</p>
-                    <p class="section-para text-white mb-4">Call us now on: <span class="contact-number">0800 472
-                            675</span></p>
-                </div>
-            </div>
-            <form>
-                <div class="form-group">
-                    <div class="input-group-prepend">
-                        <input type="name" class="form-control" id="name_field" placeholder="Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email_field" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="message_field" rows="3" placeholder="Your Message"></textarea>
-                </div>
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer -->
+    <!-- Footer-->
     <section class="" id="footer">
         <div class="footer text-center py-3">© 2017 – 2020
-            <a href="https://entuitive.co.nz/" target="_blank">ENTUITIVE Limited.</a>
+            <a href="https://entuitive.co.nz/" target="_blank">Entuitive Limited.</a>
             | <a href="https://bmis.nz/images/Terms-and-Conditions-of-use-2019v1.pdf" target="_blank">Terms</a>
             | <a href="privacy.html">Privacy</a>
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 

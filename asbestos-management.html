@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Asbestos Management — BMIS</title>
-    <link rel="icon" type="image/png" href="./assets/img/bmis_logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
@@ -15,54 +15,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap Styles -->
+    <!-- Bootstrap Stylesheet-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <!-- Override Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+
+<body id="page-top">
+
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" id="navigationBar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container container-nav">
             <a class="navbar-brand js-scroll-trigger" href="index.html">
-                <!-- href="#page-top" for scroll to top -->
                 <img class="bmis-logo" src="./assets/img/bmis_logo.png" alt="BMIS Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mobileMenu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item selected"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="asbestos-management.html">Asbestos
                             Management</a></li>
                 </ul>
-                <button class="btn-lg log-in-btn">Log In</button>
+                <button class="btn-lg log-in-btn">Go To App</button>
             </div>
         </div>
     </nav>
 
+
     <!-- Masthead -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="banner-head">What is an Asbestos Management Plan?</h1>
-            <p class="lead">The New Zealand Health and Safety at Work (Asbestos) Regulations 2016 identify that an
-                asbestos management plan shall be developed and used to manage all asbestos materials within a
+            <h1 class="banner-head text-center">What is an Asbestos Management Plan?</h1>
+            <hr class="divider my-4" />
+            <p class="lead text-center">The New Zealand Health and Safety at Work (Asbestos) Regulations 2016 identify
+                that an asbestos management plan shall be developed and used to manage all asbestos materials within a
                 workplace, this includes asbestos building products, asbestos in soil and naturally occurring asbestos.
             </p>
         </div>
     </div>
 
+
     <!-- FAQ Section -->
     <section class="page-section" id="faq">
-        <div class="container">
-            <div class="row">
-            </div>
+        <div class="container container-section">
             <h1 class="section-heading">Asbestos Management FAQ</h1>
             <div id="accordion">
                 <div class="card">
@@ -373,7 +374,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
+    <!-- Footer-->
     <section class="" id="footer">
         <div class="footer text-center py-3">© 2017 – 2020
             <a href="https://entuitive.co.nz/" target="_blank">Entuitive Limited.</a>
@@ -383,17 +385,14 @@
     </section>
 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></Script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
-
-    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
