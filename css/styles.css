@@ -388,7 +388,7 @@ form {
 }
 }
 
-.submit-in-btn {
+.submit-btn {
   color: #F1B129;
   background-color: transparent;
   border: 1px solid #F1B129;
@@ -397,7 +397,7 @@ form {
   font-size: 1rem;
 }
 
-.submit-in-btn:hover {
+.submit-btn:hover {
   color: #FFF;
   background-color: #F1B129;
   border: 1px solid #F1B129;
