@@ -369,7 +369,7 @@ header.masthead h1 {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
 }
 
 form {
@@ -386,6 +386,22 @@ form {
 form {
     width: 45%;
 }
+}
+
+.submit-in-btn {
+  color: #F1B129;
+  background-color: transparent;
+  border: 1px solid #F1B129;
+  border-radius: 10rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+}
+
+.submit-in-btn:hover {
+  color: #FFF;
+  background-color: #F1B129;
+  border: 1px solid #F1B129;
+  font-weight: 500;
 }
 
 /* FOOTER */
