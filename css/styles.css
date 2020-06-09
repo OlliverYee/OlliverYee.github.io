@@ -1,3 +1,18 @@
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/*  */
+
 body,
 html {
   width: 100%;
@@ -15,7 +30,6 @@ html {
 }
 
 .page-section {
-  padding: 2rem 0;
   width: 100%;
 }
 
@@ -40,7 +54,7 @@ html {
       }
 
       .page-section {
-        padding: 4rem 0;
+        padding: 2rem 0;
         width: 100%;
       }
   }
@@ -53,13 +67,13 @@ html {
       }
 
       .page-section {
-        padding: 8rem 0;
+        padding: 4rem 0;
         width: 100%;
       }
   }
 
 .container-nav, .container-section {
-  max-width: 1650px;
+  max-width: 1450px;
 }
 
 /* NAVIGATION */
@@ -193,6 +207,7 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
+
 header.masthead h1 {
   font-size: 2.25rem;
 }
@@ -204,13 +219,16 @@ header.masthead h1 {
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
+
   header.masthead p {
     font-size: 1.15rem;
   }
+
   header.masthead h1 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 3.5rem;
@@ -246,6 +264,11 @@ header.masthead h1 {
 }
 
 /* POWERED BY ENTUITIVE SECTION */
+
+#powered-by-img {
+  padding: 1em;
+  width: 50%;
+}
 
 #entuitive {
   background-color: #f1f1f1;
