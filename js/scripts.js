@@ -1,7 +1,7 @@
 (function ($) {
   "use strict";
 
-  // Smooth scrolling using jQuery easing
+  // jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -28,17 +28,17 @@
       $("#mainNav").removeClass("navbar-scrolled");
     }
   };
-  // Collapse now if page is not at top
+  // Collapse the navbar if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
 })(jQuery);
 
+// AOS 
 AOS.init();
 
-// You can also pass an optional settings object
-// below listed default settings
+// Default settings
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
