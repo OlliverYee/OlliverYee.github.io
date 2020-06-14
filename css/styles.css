@@ -221,6 +221,31 @@ header.masthead h1 {
   color: #1d4162;
 }
 
+/* CTA */
+
+#bmis {
+  background-color: #1d4162;
+  padding: 4rem;
+}
+
+.link-btn {
+  background-color: transparent;
+  margin-bottom: 0.2rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.link-btn:hover {
+  color: #1d4162;
+  background-color: #fff;
+  border: none;
+}
+
+#bmis-logo {
+  width: 10rem;
+  padding-bottom: 0.6rem;
+}
+
 /* Why CCS? */
 
 section.pricing {
@@ -264,6 +289,8 @@ section.pricing {
 }
 
 .pricing .btn {
+  background-color: #1d4162;
+  border: none;
   font-size: 80%;
   border-radius: 5rem;
   letter-spacing: .1rem;
@@ -284,25 +311,6 @@ section.pricing {
   }
 }
 
-/* CTA */
-
-#bmis {
-  background-color: #1d4162;
-  padding: 2rem;
-}
-
-.link-btn {
-  background-color: transparent;
-  margin-bottom: 0.2rem;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.link-btn:hover {
-  color: #1d4162;
-  background-color: #fff;
-  border: none;
-}
 
 /* CONTACT */
 
