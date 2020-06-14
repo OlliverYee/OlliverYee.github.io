@@ -78,8 +78,8 @@ hr.divider {
   color: #1d4162;
   border: 1px solid #1d4162;
   border-radius: 10rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   font-size: 0.8rem;
 }
 
@@ -88,6 +88,7 @@ hr.divider {
   background-color: #1d4162;
   border: 1px solid #1d4162;
   font-weight: 500;
+  text-decoration: none;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
@@ -250,6 +251,8 @@ header.masthead h1 {
 
 /* Why CCS? */
 
+/* Pricing */
+
 section.pricing {
   background: linear-gradient(to bottom, #1d4162, #235584);
 }
@@ -277,7 +280,7 @@ section.pricing {
   margin: 0;
 }
 
-.pricing .card-price .period {
+.pricing .card-price .gap {
   font-size: 0.8rem;
 }
 
