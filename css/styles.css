@@ -251,7 +251,6 @@ header.masthead h1 {
 /* Why CCS? */
 
 section.pricing {
-  background: #1d4162;
   background: linear-gradient(to bottom, #1d4162, #235584);
 }
 
