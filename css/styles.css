@@ -250,7 +250,7 @@ header.masthead h1 {
 
 section.pricing {
   background: #1d4162;
-  background: linear-gradient(to right, #1d4162, #1d4162);
+  background: linear-gradient(to bottom, #1d4162, #235584);
 }
 
 .pricing .card {
