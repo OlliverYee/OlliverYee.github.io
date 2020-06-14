@@ -218,65 +218,71 @@ header.masthead h1 {
 /* SNAPSHOT */
 
 .fa-layer-group, .fa-stream, .fa-tablet-alt, .fa-file-pdf, .fa-phone, .fa-envelope {
-  color: #1d4162
+  color: #1d4162;
 }
 
 /* Why CCS? */
 
-.container-table {
-  padding-top: 10rem; 
+section.pricing {
+  background: #1d4162;
+  background: linear-gradient(to right, #1d4162, #1d4162);
 }
 
-.table td {
-  text-align: center;
-  font-size: 2rem;
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
-#table-sub-head {
-  border-top: none;
-  font-size: 1.4rem;
+.pricing hr {
+  margin: 1.5rem 0;
 }
 
-@media (min-width: 992px) {
-  #table-sub-head {
-    border-top: none;
-    font-size: 1.8rem;
-  }
-}
-  
-  @media (min-width: 1200px) {
-    #table-sub-head {
-      border-top: none;
-      font-size: 2rem;
-    }
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
 }
 
-#table-col-head {
-  padding: 1rem 0;
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.table-head {
-  background-color: #575757;
-  color: #fff;
-  text-align: center;
+.pricing .card-price .period {
   font-size: 0.8rem;
 }
 
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
 @media (min-width: 992px) {
-  .table-head {
-    background-color: #575757;
-    text-align: center;
-    font-size: 1.2rem;
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
+  .pricing .card:hover .btn {
+    opacity: 1;
   }
-  
-  @media (min-width: 1200px) {
-    .table-head {
-      background-color: #575757;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-  }
+}
 
 /* CTA */
 
@@ -419,7 +425,7 @@ header.masthead h1 {
   font-weight: 800;
 }
 
-.card {
+.accordian-card {
     cursor: pointer;
 }
 
@@ -441,7 +447,7 @@ header.masthead h1 {
   margin: 0 auto;
 }
 
-.card-body {
+.accordian-card .card-body {
   padding-left: 3.8rem;
 }
 
