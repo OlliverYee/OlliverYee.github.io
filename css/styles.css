@@ -220,7 +220,7 @@ header.masthead h1 {
 
 /* SNAPSHOT */
 
-.fa-layer-group, .fa-stream, .fa-tablet-alt, .fa-file-pdf, .fa-phone, .fa-envelope {
+.fa-layer-group, .fa-stream, .fa-mobile-alt, .fa-file-pdf, .fa-phone, .fa-envelope {
   color: #1d4162;
 }
 
@@ -250,6 +250,54 @@ header.masthead h1 {
 }
 
 /* Why CCS? */
+
+/* BRANDS SECTION */
+.grid-brand {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.brand-logo {
+  width: 50%;
+  filter: grayscale(100%);
+}
+
+.logo-wh {
+  filter: invert(100%) grayscale(100%);
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 30%;
+    filter: grayscale(100%);
+  }
+  
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-logo {
+    width: 40%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .brand-logo {
+    width: 45%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
 
 /* Pricing */
 
