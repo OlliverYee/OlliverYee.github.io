@@ -1,4 +1,40 @@
-/* Add File Nav Here */
+/* STYLESHEET NAVIGATION */
+/* ------ GLOBAL ------ */
+  /* 1: Main */
+  /* 2: Navigation */
+  /* 3: Footer */
+/* ------ End ------ */
+
+
+/* ------ INDEX ------ */
+  /* 1: Masthead  */
+  /* 2: Snapshot */
+  /* 3: Why BMIS */
+  /* 4: Awards */
+  /* 5: Comparison */
+  /* 6: Pricing */
+  /* 7: Contact */
+/* ------ End ------ */
+
+
+/* ------ ABOUT ------ */
+  /* 1: Masthead */
+  /* 2: About Images */
+  /* 3: Brands */
+  /* 4: Services */
+/* ------ End ------ */
+
+
+/* ------ ASBESTOS MANAGEMENT ------ */
+  /* 1: FAQ */
+/* ------ End ------ */
+
+
+
+
+/* ------ GLOBAL ------ */
+
+/* 1: Main */
 
 body,
 html {
@@ -6,11 +42,6 @@ html {
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
-
-hr.divider {
-  border-color: #fff;
-}
-
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
@@ -22,40 +53,54 @@ hr.divider {
 }
 
 .page-section {
-  padding: 8rem 0;
+  width: 100%;
 }
 
 .section-heading {
   font-family: "Montserrat Bold", sans-serif;
   font-weight: 700;
   font-size: 42px;
-  padding-bottom: 0.8rem;
+  margin-bottom: 3rem;
+  padding-top: 4rem;
 }
 
 .section-para {
-  padding: 0;
-  text-align: center;
+  color: #333;
+  font-size: 16px;
+  line-height: normal;
 }
 
-@media (min-width: 992px) {
-  .section-para {
-    padding: 0 10rem;
-    text-align: center;
-  }
-}
+  @media (min-width: 992px) {
+    .section-para {
+        color: #333;
+        font-size: 18px;
+        line-height: normal;
+      }
 
-@media (min-width: 1200px) {
-  .section-para {
-    padding: 0 10rem;
-    text-align: center;
+      .page-section {
+        padding: 2rem 0;
+        width: 100%;
+      }
   }
-}
+
+  @media (min-width: 1200px) {
+      .section-para {
+          color: #333;
+          font-size: 20px;
+          line-height: normal;
+      }
+
+      .page-section {
+        padding: 4rem 0;
+        width: 100%;
+      }
+  }
 
 .container-nav, .container-section {
   max-width: 1350px;
 }
 
-/* NAVIGATION */
+/* 2: Navigation */
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -63,40 +108,31 @@ hr.divider {
   transition: background-color 0.2s ease;
 }
 
-.ccs-logo {
-  height: 3rem;
-  width: 8rem;
+.bmis-logo {
+  height: 3.5rem;
+  width: 7rem;
 } 
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #1d4162;
-  font-size: 0.9rem;
-  padding: 0.75rem 0;
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  color: #4E97D1;
 }
 
 .log-in-btn {
-  color: #1d4162;
-  border: 1px solid #1d4162;
+  color: #4E97D1;
+  border: 1px solid #4E97D1;
   border-radius: 10rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 0.8rem;
 }
 
 .log-in-btn:hover {
   color: #FFF;
-  background-color: #1d4162;
-  border: 1px solid #1d4162;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
   font-weight: 500;
-  text-decoration: none;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #000;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #000 !important;
 }
 
 @media (min-width: 992px) {
@@ -105,41 +141,29 @@ hr.divider {
     background-color: transparent;
   }
 
-  .ccs-logo {
-    height: 3rem;
-    width: 8rem;
+  .bmis-logo {
+    height: 4.5rem;
+    width: 9rem;
   }
 
   #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding-left: 1rem;
     color: #fff;
-    padding: 0 1rem;
   }
 
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #1d4162;
+  #mainNav .navbar-nav .nav-item .nav-link:hover {  
+    color: #F1B129;
   }
 
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
 
-  #mainNav.navbar-scrolled {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
-  }
-
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #1d4162;
-  }
-
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #000;
-  }
-
   .log-in-btn {
-    color: #fff;
+    color: #F1B129;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #F1B129;
     border-radius: 10rem;
     padding: 0.8rem 1.8rem;
     margin-left: 2rem;
@@ -148,30 +172,69 @@ hr.divider {
 
 .log-in-btn:hover {
     color: #FFF;
-    background-color: #1d4162;
-    border: 1px solid #1d4162;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
     font-weight: 500;
 }
 
-#mainNav.navbar-scrolled .log-in-btn {
-  color: #1d4162;
-  border: 1px solid #1d4162;
+  #mainNav.navbar-scrolled {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #4E97D1;
+    font-size: 1rem;
+    padding-left: 1em;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn {
+    color: #4E97D1;
+    border: 1px solid #4E97D1;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn:hover {
+    color: #FFF;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
+    font-weight: 500;
 }
 
-#mainNav.navbar-scrolled .log-in-btn:hover {
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: #F1B129;
+  }
+}
+
+/* 3: Footer */
+
+footer, footer a {
+  background-color: #4E97D1;
   color: #FFF;
-  background-color: #1d4162;
-  border: 1px solid #1d4162;
-  font-weight: 500;
-}
 }
 
-/* MASTHEAD */
+/* ------ INDEX ------ */
+
+/* 1: Masthead */
+
+.mast-content {
+  padding-bottom: 16rem;
+}
+
+.mast-btn {
+  background-color: #4E97D1;
+  margin-bottom: 0.2rem;
+}
+
+.mast-btn:hover {
+  color: #fff;
+  background-color: #F1B129;
+}
 
 header.masthead {
+  height: 100vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.96) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/mast-bg.png");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%), url("../assets/img/rendered_blank.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -180,19 +243,6 @@ header.masthead {
 
 header.masthead h1 {
   font-size: 2.25rem;
-}
-
-.mast-btn {
-  background-color: transparent;
-  margin-bottom: 0.2rem;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.mast-btn:hover {
-  color: #fff;
-  background-color: #1d4162;
-  border: none;
 }
 
 @media (min-width: 992px) {
@@ -218,88 +268,134 @@ header.masthead h1 {
   }
 }
 
-/* SNAPSHOT */
 
-.fa-layer-group, .fa-stream, .fa-mobile-alt, .fa-file-pdf, .fa-phone, .fa-envelope {
-  color: #1d4162;
+/* 2: Snapshot */
+
+.fa-folder-open, .fa-exclamation-triangle, .fa-sitemap, .fa-check-square {
+  color: #4E97D1;
 }
 
-/* CTA */
-
-#bmis {
-  background-color: #1d4162;
-  padding: 4rem;
-}
-
-.link-btn {
-  background-color: transparent;
-  margin-bottom: 0.2rem;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.link-btn:hover {
-  color: #1d4162;
-  background-color: #fff;
-  border: none;
-}
-
-#bmis-logo {
-  width: 10rem;
-  padding-bottom: 0.6rem;
-}
-
-/* Why CCS? */
-
-/* BRANDS SECTION */
-.grid-brand {
-  margin-bottom: 2rem;
-  padding: 0;
-}
-
-.brand-logo {
-  width: 50%;
-  filter: grayscale(100%);
-}
-
-.logo-wh {
-  filter: invert(100%) grayscale(100%);
+.card-desc {
+  padding: 0 0.8em;
 }
 
 @media (min-width: 768px) {
-  .brand-logo {
-    width: 30%;
-    filter: grayscale(100%);
-  }
-  
-  .logo-wh {
-    filter: invert(100%) grayscale(100%);
+  .card-desc {
+    padding: 0 6em;
   }
 }
 
 @media (min-width: 992px) {
-  .brand-logo {
-    width: 40%;
-    filter: grayscale(100%);
+  .card-desc {
+    padding: 0 1em;
   }
+}
+  
+  @media (min-width: 1200px) {
+    .card-desc {
+      padding: 0 1.4em;
+    }
+}
 
-  .logo-wh {
-    filter: invert(100%) grayscale(100%);
+
+
+/* 3: Why BMIS */
+
+#why-bmis {
+  background-color: #fbfbfd;
+}
+
+.img-responsive {
+  width: 90%;
+}
+
+
+/* 4: Awards */
+
+#award-section {
+  background-color: #f1f1f1;
+  max-width: 50%;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
   }
 }
 
+@media (min-width: 992px) {
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+  
 @media (min-width: 1200px) {
-  .brand-logo {
-    width: 45%;
-    filter: grayscale(100%);
-  }
-
-  .logo-wh {
-    filter: invert(100%) grayscale(100%);
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
   }
 }
 
-/* Pricing */
+/* 5: Comparison */
+
+.container-table {
+  padding-top: 10rem; 
+}
+
+.table td {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#table-sub-head {
+  border-top: none;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  #table-sub-head {
+    border-top: none;
+    font-size: 1.8rem;
+  }
+}
+  
+  @media (min-width: 1200px) {
+    #table-sub-head {
+      border-top: none;
+      font-size: 2rem;
+    }
+}
+
+#table-col-head {
+  padding: 1rem 0;
+}
+
+.table-head {
+  background-color: #4E97D1;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .table-head {
+    background-color: #4E97D1;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    .table-head {
+      background-color: #4E97D1;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+/* 6: Pricing */
 
 section.pricing {
   background: linear-gradient(to bottom, #1d4162, #235584);
@@ -363,33 +459,42 @@ section.pricing {
   }
 }
 
+/* 7: Contact */
 
-/* CONTACT */
+.contact-info {
+  color: #F1B129; 
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
 
 #contact {
-  background-color: #575757;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.1) 0%, rgba(92, 77, 66, 0.2) 100%), url("../assets/img/contact_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 70vh;
 }
 
 .contact-email a{
-  color: #fff;
+  color: #F1B129;
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
-/* FOOTER */
 
-#footer, #footer a {
-  background-color: #1d4162;
-  color: #FFF;
-}
 
 /* ------ ABOUT PAGE ------ */
 
-/* MASTHEAD */
+/* 1: Masthead */
 
 .jumbotron {
   padding-top: 10rem;
   padding-bottom: 2rem;
   color: #fff;
-  background: #fff linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
 }
 
 .jumbotron p {
@@ -401,7 +506,7 @@ section.pricing {
     padding-top: 12rem;
     padding-bottom: 5rem;
     color: #fff;
-    background: #fff linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
   }
   
   .jumbotron p {
@@ -414,7 +519,7 @@ section.pricing {
       padding-top: 16rem;
       padding-bottom: 10rem;
       color: #fff;
-      background: #fff linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, rgba(0, 0, 0, 0.9) 100%);
+      background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
     }
 
     .jumbotron p {
@@ -422,7 +527,7 @@ section.pricing {
     }
   }
 
-/* HEALTH AND SAFETY SECTION */
+/* 2: About Images */
 
 #safety-img {
   width: 90%;
@@ -430,65 +535,100 @@ section.pricing {
 
 #solution-img {
   width: 90%;
+  margin: 0 auto;
 }
 
 #plans-img {
   width: 90%;
 }
 
+
 #the-solution {
   background-color: #F1F1F1;
 }
 
-/* ------ MODULES ------ */
-
-/* Accordian */
-
-#module-cards {
-  margin-bottom: 5rem;
+/* 3: Brands */
+.grid-brand {
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
-.card1-head {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.96) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/mast-bg.png");
-  padding-bottom: 6rem;
+.brand-logo {
+  width: 50%;
+  filter: grayscale(100%);
 }
 
-.card2-head {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.96) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/lbp-bg.jpg");
-  padding-bottom: 6rem;
+.logo-wh {
+  filter: invert(100%) grayscale(100%);
 }
 
-.card3-head {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.96) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/meth.png");
-  padding-bottom: 6rem;
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 30%;
+    filter: grayscale(100%);
+  }
+  
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
 }
 
-.card1-head:hover {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/mast-bg.png");
+@media (min-width: 992px) {
+  .brand-logo {
+    width: 40%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
 }
 
-.card2-head:hover {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/lbp-bg.jpg");
+@media (min-width: 1200px) {
+  .brand-logo {
+    width: 45%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
 }
 
-.card3-head:hover {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.6) 100%), url("../assets/img/meth.png");
+/* 4: Services */
+
+#powered-by-img {
+  padding: 1em;
+  width: 50%;
 }
 
-.card-title {
-  color: #fff;
-  font-size: 2rem;
+#entuitive {
+  background-color: #f1f1f1;
 }
 
-.card-title:hover {
-  color: #fff;
-  font-weight: 800;
+.entuitive-site-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
 }
 
-.accordian-card {
-    cursor: pointer;
+.entuitive-site-btn:hover {
+  color: #FFF;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
+  font-weight: 500;
 }
 
+#entuitive-logo {
+  width: 60%;
+}
+
+/* ------ ASBESTOS MANAGEMENT PAGE ------ */
+
+/* 1: FAQ */
 
 .btn-link {
   width: 100%;
@@ -524,4 +664,7 @@ section.pricing {
       margin: 0 auto;
   }
 }
+
+
+
 
