@@ -1,0 +1,670 @@
+/* STYLESHEET NAVIGATION */
+/* ------ GLOBAL ------ */
+  /* 1: Main */
+  /* 2: Navigation */
+  /* 3: Footer */
+/* ------ End ------ */
+
+
+/* ------ INDEX ------ */
+  /* 1: Masthead  */
+  /* 2: Snapshot */
+  /* 3: Why BMIS */
+  /* 4: Awards */
+  /* 5: Comparison */
+  /* 6: Pricing */
+  /* 7: Contact */
+/* ------ End ------ */
+
+
+/* ------ ABOUT ------ */
+  /* 1: Masthead */
+  /* 2: About Images */
+  /* 3: Brands */
+  /* 4: Services */
+/* ------ End ------ */
+
+
+/* ------ ASBESTOS MANAGEMENT ------ */
+  /* 1: FAQ */
+/* ------ End ------ */
+
+
+
+
+/* ------ GLOBAL ------ */
+
+/* 1: Main */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.page-section {
+  width: 100%;
+}
+
+.section-heading {
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 3rem;
+  padding-top: 4rem;
+}
+
+.section-para {
+  color: #333;
+  font-size: 16px;
+  line-height: normal;
+}
+
+  @media (min-width: 992px) {
+    .section-para {
+        color: #333;
+        font-size: 18px;
+        line-height: normal;
+      }
+
+      .page-section {
+        padding: 2rem 0;
+        width: 100%;
+      }
+  }
+
+  @media (min-width: 1200px) {
+      .section-para {
+          color: #333;
+          font-size: 20px;
+          line-height: normal;
+      }
+
+      .page-section {
+        padding: 4rem 0;
+        width: 100%;
+      }
+  }
+
+.container-nav, .container-section {
+  max-width: 1350px;
+}
+
+/* 2: Navigation */
+
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.bmis-logo {
+  height: 3.5rem;
+  width: 7rem;
+} 
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  color: #4E97D1;
+}
+
+.log-in-btn {
+  color: #4E97D1;
+  border: 1px solid #4E97D1;
+  border-radius: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.log-in-btn:hover {
+  color: #FFF;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .bmis-logo {
+    height: 4.5rem;
+    width: 9rem;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link:hover {  
+    color: #F1B129;
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+
+  .log-in-btn {
+    color: #F1B129;
+    background-color: transparent;
+    border: 1px solid #F1B129;
+    border-radius: 10rem;
+    padding: 0.8rem 1.8rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.log-in-btn:hover {
+    color: #FFF;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
+    font-weight: 500;
+}
+
+  #mainNav.navbar-scrolled {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #4E97D1;
+    font-size: 1rem;
+    padding-left: 1em;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn {
+    color: #4E97D1;
+    border: 1px solid #4E97D1;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn:hover {
+    color: #FFF;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
+    font-weight: 500;
+}
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: #F1B129;
+  }
+}
+
+/* 3: Footer */
+
+footer, footer a {
+  background-color: #4E97D1;
+  color: #FFF;
+}
+
+/* ------ INDEX ------ */
+
+/* 1: Masthead */
+
+.mast-content {
+  padding-bottom: 16rem;
+}
+
+.mast-btn {
+  background-color: #4E97D1;
+  margin-bottom: 0.2rem;
+}
+
+.mast-btn:hover {
+  color: #fff;
+  background-color: #F1B129;
+}
+
+header.masthead {
+  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%), url("../assets/img/rendered_blank.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+/* 2: Snapshot */
+
+.fa-folder-open, .fa-exclamation-triangle, .fa-sitemap, .fa-check-square {
+  color: #4E97D1;
+}
+
+.card-desc {
+  padding: 0 0.8em;
+}
+
+@media (min-width: 768px) {
+  .card-desc {
+    padding: 0 6em;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-desc {
+    padding: 0 1em;
+  }
+}
+  
+  @media (min-width: 1200px) {
+    .card-desc {
+      padding: 0 1.4em;
+    }
+}
+
+
+
+/* 3: Why BMIS */
+
+#why-bmis {
+  background-color: #fbfbfd;
+}
+
+.img-responsive {
+  width: 90%;
+}
+
+
+/* 4: Awards */
+
+#award-section {
+  background-color: #f1f1f1;
+  max-width: 50%;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .award-img {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+/* 5: Comparison */
+
+.container-table {
+  padding-top: 10rem; 
+}
+
+.table td {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#table-sub-head {
+  border-top: none;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  #table-sub-head {
+    border-top: none;
+    font-size: 1.8rem;
+  }
+}
+  
+  @media (min-width: 1200px) {
+    #table-sub-head {
+      border-top: none;
+      font-size: 2rem;
+    }
+}
+
+#table-col-head {
+  padding: 1rem 0;
+}
+
+.table-head {
+  background-color: #4E97D1;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .table-head {
+    background-color: #4E97D1;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    .table-head {
+      background-color: #4E97D1;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+/* 6: Pricing */
+
+section.pricing {
+  background: linear-gradient(to bottom, #1d4162, #235584);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .gap {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  background-color: #1d4162;
+  border: none;
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* 7: Contact */
+
+.contact-info {
+  color: #F1B129; 
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.1) 0%, rgba(92, 77, 66, 0.2) 100%), url("../assets/img/contact_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 70vh;
+}
+
+.contact-email a{
+  color: #F1B129;
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+
+
+/* ------ ABOUT PAGE ------ */
+
+/* 1: Masthead */
+
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+}
+
+.jumbotron p {
+  padding: 0 1rem;
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    color: #fff;
+    background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+  }
+  
+  .jumbotron p {
+    padding: 0 8rem;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    .jumbotron {
+      padding-top: 16rem;
+      padding-bottom: 10rem;
+      color: #fff;
+      background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+    }
+
+    .jumbotron p {
+      padding: 0 8rem;
+    }
+  }
+
+/* 2: About Images */
+
+#safety-img {
+  width: 90%;
+}
+
+#solution-img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#plans-img {
+  width: 90%;
+}
+
+
+#the-solution {
+  background-color: #F1F1F1;
+}
+
+/* 3: Brands */
+.grid-brand {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.brand-logo {
+  width: 50%;
+  filter: grayscale(100%);
+}
+
+.logo-wh {
+  filter: invert(100%) grayscale(100%);
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 30%;
+    filter: grayscale(100%);
+  }
+  
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-logo {
+    width: 40%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .brand-logo {
+    width: 45%;
+    filter: grayscale(100%);
+  }
+
+  .logo-wh {
+    filter: invert(100%) grayscale(100%);
+  }
+}
+
+/* 4: Services */
+
+#powered-by-img {
+  padding: 1em;
+  width: 50%;
+}
+
+#entuitive {
+  background-color: #f1f1f1;
+}
+
+.entuitive-site-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+}
+
+.entuitive-site-btn:hover {
+  color: #FFF;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
+  font-weight: 500;
+}
+
+#entuitive-logo {
+  width: 60%;
+}
+
+/* ------ ASBESTOS MANAGEMENT PAGE ------ */
+
+/* 1: FAQ */
+
+.btn-link {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-link:hover {
+  color: #4E97D1;
+}
+
+#accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordian-card .card-body {
+  padding-left: 3.8rem;
+}
+
+@media (min-width: 992px) {
+  #accordion {
+      width: 60%;
+      margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #accordion {
+      width: 60%;
+      margin: 0 auto;
+  }
+}
+
+
+
+
