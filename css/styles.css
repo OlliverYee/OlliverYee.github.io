@@ -188,6 +188,7 @@
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
@@ -209,6 +210,7 @@
   position: relative;
   border-bottom: 1px solid #e9ecef;
 }
+
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   font-size: 1.5em;
@@ -222,6 +224,7 @@
   background: none;
   box-shadow: none !important;
 }
+
 .floating-label-form-group label {
   font-size: 0.85em;
   line-height: 1.764705882em;
@@ -233,6 +236,7 @@
   transition: top 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
+
 .floating-label-form-group:not(:first-child) {
   padding-left: 14px;
   border-left: 1px solid #e9ecef;
