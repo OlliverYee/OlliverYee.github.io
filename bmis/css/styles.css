@@ -1,0 +1,545 @@
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/*  */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.page-section {
+  width: 100%;
+}
+
+.section-heading {
+  font-family: "Montserrat Bold", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 3rem;
+}
+
+.section-para {
+  color: #333;
+  font-size: 16px;
+  line-height: normal;
+}
+
+  @media (min-width: 992px) {
+    .section-para {
+        color: #333;
+        font-size: 18px;
+        line-height: normal;
+      }
+
+      .page-section {
+        padding: 2rem 0;
+        width: 100%;
+      }
+  }
+
+  @media (min-width: 1200px) {
+      .section-para {
+          color: #333;
+          font-size: 20px;
+          line-height: normal;
+      }
+
+      .page-section {
+        padding: 4rem 0;
+        width: 100%;
+      }
+  }
+
+.container-nav, .container-section {
+  max-width: 1350px;
+}
+
+/* NAVIGATION */
+
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.bmis-logo {
+  height: 3.5rem;
+  width: 7rem;
+} 
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  color: #4E97D1;
+}
+
+.log-in-btn {
+  color: #4E97D1;
+  border: 1px solid #4E97D1;
+  border-radius: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.log-in-btn:hover {
+  color: #FFF;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .bmis-logo {
+    height: 4.5rem;
+    width: 9rem;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link:hover {  
+    color: #F1B129;
+  }
+
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+
+  .log-in-btn {
+    color: #F1B129;
+    background-color: transparent;
+    border: 1px solid #F1B129;
+    border-radius: 10rem;
+    padding: 0.8rem 1.8rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.log-in-btn:hover {
+    color: #FFF;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
+    font-weight: 500;
+}
+
+  #mainNav.navbar-scrolled {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #4E97D1;
+    font-size: 1rem;
+    padding-left: 1em;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn {
+    color: #4E97D1;
+    border: 1px solid #4E97D1;
+  }
+
+  #mainNav.navbar-scrolled .log-in-btn:hover {
+    color: #FFF;
+    background-color: #F1B129;
+    border: 1px solid #F1B129;
+    font-weight: 500;
+}
+
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: #F1B129;
+  }
+}
+
+/* MASTHEAD */
+
+.mast-content {
+  padding-bottom: 16rem;
+}
+
+.mast-btn {
+  background-color: #4E97D1;
+  margin-bottom: 0.2rem;
+}
+
+.mast-btn:hover {
+  color: #fff;
+  background-color: #F1B129;
+}
+
+header.masthead {
+  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%), url("../assets/img/rendered_blank.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* SNAPSHOT SECTION */
+
+.fa-folder-open, .fa-exclamation-triangle, .fa-sitemap, .fa-check-square {
+  color: #4E97D1;
+}
+
+.card-desc {
+  padding: 0 0.8em;
+}
+
+@media (min-width: 768px) {
+  .card-desc {
+    padding: 0 6em;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-desc {
+    padding: 0 1em;
+  }
+}
+  
+  @media (min-width: 1200px) {
+    .card-desc {
+      padding: 0 1.4em;
+    }
+}
+
+/* POWERED BY ENTUITIVE SECTION */
+
+#powered-by-img {
+  padding: 1em;
+  width: 50%;
+}
+
+#entuitive {
+  background-color: #f1f1f1;
+}
+
+.entuitive-site-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+}
+
+.entuitive-site-btn:hover {
+  color: #FFF;
+  background-color: #4E97D1;
+  border: 1px solid #4E97D1;
+  font-weight: 500;
+}
+
+#entuitive-logo {
+  width: 60%;
+}
+
+.left-e {
+  text-align: end;
+}
+
+.right-e {
+  text-align: start;
+}
+
+/* WHY BMIS? SECTION */
+
+#why-bmis {
+  background-color: #fbfbfd;
+}
+
+.img-responsive {
+  width: 90%;
+}
+
+
+/* AWARD SECTION */
+
+#award-section {
+  background-color: #f1f1f1;
+  max-width: 100%;
+  padding: 2rem;
+}
+
+/* COMPARISON SECTION */
+
+.container-table {
+  padding-top: 10rem; 
+}
+
+.table td {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#table-sub-head {
+  border-top: none;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  #table-sub-head {
+    border-top: none;
+    font-size: 1.8rem;
+  }
+}
+  
+  @media (min-width: 1200px) {
+    #table-sub-head {
+      border-top: none;
+      font-size: 2rem;
+    }
+}
+
+#table-col-head {
+  padding: 1rem 0;
+}
+
+.table-head {
+  background-color: #4E97D1;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .table-head {
+    background-color: #4E97D1;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    .table-head {
+      background-color: #4E97D1;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+
+/* CONTACT SECTION */
+
+.contact-number {
+  color: #F1B129; 
+  font-family: "Montserrat SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact {
+  background-image: url("../assets/img/contact_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 70vh;
+}
+
+/* form {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+form {
+    width: 50%;
+}
+}
+
+@media (min-width: 1200px) {
+form {
+    width: 45%;
+}
+}
+
+.submit-btn {
+  color: #F1B129;
+  background-color: transparent;
+  border: 1px solid #F1B129;
+  border-radius: 10rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  color: #FFF;
+  background-color: #F1B129;
+  border: 1px solid #F1B129;
+  font-weight: 500;
+} */
+
+.product-area {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 50px 30px;
+}
+
+/* FOOTER */
+
+#footer, #footer a {
+  background-color: #4E97D1;
+  color: #FFF;
+}
+
+
+/* ------ ABOUT PAGE ------ */
+
+/* MASTHEAD */
+
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+}
+
+.jumbotron p {
+  padding: 0 1rem;
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    color: #fff;
+    background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+  }
+  
+  .jumbotron p {
+    padding: 0 8rem;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+    .jumbotron {
+      padding-top: 16rem;
+      padding-bottom: 10rem;
+      color: #fff;
+      background: #64c9fd linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.5) 100%);
+    }
+
+    .jumbotron p {
+      padding: 0 8rem;
+    }
+  }
+
+/* HEALTH AND SAFETY SECTION */
+
+#safety-img {
+  width: 90%;
+}
+
+#solution-img {
+  width: 90%;
+}
+
+#plans-img {
+  width: 90%;
+}
+
+
+
+#the-solution {
+  background-color: #F1F1F1;
+}
+
+/* ------ ASBESTOS MANAGEMENT PAGE ------ */
+
+.btn-link {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-link:hover {
+  color: #4E97D1;
+}
+
+#accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-body {
+  padding-left: 3.8rem;
+}
+
+@media (min-width: 992px) {
+  #accordion {
+      width: 60%;
+      margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #accordion {
+      width: 60%;
+      margin: 0 auto;
+  }
+}
+
+
+/* ------ PRIVACY PAGE ------ */
+
