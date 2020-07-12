@@ -275,3 +275,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* END OF OVERRIDE CSS */
+
+.contact-email {
+  color: #576866;
+  font-weight: bold;
+}
